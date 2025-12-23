@@ -77,6 +77,11 @@ function guardarNombre() {
         return;
     }
 
+    // Ocultar COMPLETAMENTE las secciones (sin dejar espacio)
+    const secciones = document.querySelectorAll(
+        "header, .card, .gallery, .surprise-section"
+    );
+
     // Ocultar la primera pantalla
     document.body.innerHTML = document.body.innerHTML; // kill events (opcional)
 

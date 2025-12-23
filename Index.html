@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo de Navidad</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <canvas id="snow"></canvas>
+
+    <header class="hero">
+        <img src="Imagenes/Sana_Imagen_Principal.jpg" alt="Sana" class="sana-img">
+        <h1>Feliz Navidad 🎄</h1>
+        <h2>Con cariño… Sana Edition ✨</h2>
+    </header>
+
+    <section class="card">
+        <h2>💖 Mensaje para ti 💖</h2>
+        <p>
+            Espero que esta Navidad esté llena de alegría, luz y muchos momentos felices.
+            Preparé esta página con temática de Sana porque sé cuánto te gusta, y quería
+            darte algo especial y único. 🎁✨
+        </p>
+    </section>
+
+    <section class="surprise-section">
+
+    <button class="surprise-btn" onclick="mostrarRegistro()">
+        🎁 Sorpresa
+    </button>
+
+    <div id="registro" class="registro-container">
+        <h3>🎀 Ingresa tu nombre</h3>
+        <input type="text" id="nombreInput" placeholder="Escribe tu nombre aquí...">
+        <button class="enviar-btn" onclick="guardarNombre()">Enviar</button>
+        <p id="mensajeFinal"></p>
+    </div>
+
+</section>
+
+
+    <section class="gallery">
+        <h2>📸 Galería de Sana</h2>
+        <div class="images">
+            <img src="Imagenes/Sana_peluche.jpg"alt="Sana 1">
+            <img src="Imagenes/Sana_Imagen_2.jpg" alt="Sana 2">
+            <img src="Imagenes/Sana_Ooh.jpg" alt="Sana 3">
+        </div>
+        <p class="gallery-phrase">Siempre has de mirar hacia delante ✨</p>
+    </section>
+    
+    <div id="pantallaCorazon" class="pantalla-corazon">
+        <h2 id="tituloCorazon"></h2>
+        
+        <div class="corazon-grid">
+             <!-- Aquí se generarán las imágenes automáticamente -->
+        </div>
+    </div>
+
+    <footer>
+        Hecho con 💕 y mucho Twice
+    </footer>
+
+    <script src="JS/scriptt.js"></script>
+</body>
+</html>

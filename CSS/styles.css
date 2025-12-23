@@ -66,9 +66,9 @@ h1, h2 {
 footer {
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: auto;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 6400;
     color: #ff66a3;
     background: #ffe3f2;
     border-top: 2px solid #ffb7d5;
@@ -183,4 +183,30 @@ canvas {
     height: 40px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .corazon-grid {
+        grid-template-columns: repeat(9, 35px);
+    }
+
+    .corazon-grid img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
 }
